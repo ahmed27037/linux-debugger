@@ -1,0 +1,14 @@
+# Compiled binaries (no extension on Linux)
+debugger
+target
+
+# Object files
+*.o
+
+# Editor swap/backup files
+*.swp
+*.swo
+*~
+
+# Stray Windows artifacts
+*.exe

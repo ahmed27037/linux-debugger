@@ -1,0 +1,2 @@
+# Linux-only project: normalize all text to LF, even when cloned on Windows.
+* text=auto eol=lf
