@@ -206,13 +206,13 @@ long lookup_address(int lineno) {
 int sendcommands() {
 	printf("\n");
 	printf("Choose next command \n");
-	printf("1 = add/remove breakpoints, 2 = inspect values, 3 = step to next line, 4 = go until next breakpoint \n");
+	printf("1 = add/remove breakpoints, 2 = inspect values, 3 = single-step one instruction, 4 = go until next breakpoint \n");
 	int result = 0;
 	scanf("%d", &result);
 	while (result != 1 && result != 2 && result != 3 && result != 4) {
 		while (getchar() != '\n');  // flush bad input
 		printf("Not one of the options try again \n");
-		printf("1 = add/remove breakpoints, 2 = inspect values, 3 = step to next line, 4 = go until next breakpoint \n");
+		printf("1 = add/remove breakpoints, 2 = inspect values, 3 = single-step one instruction, 4 = go until next breakpoint \n");
 		scanf("%d", &result);
 	}
 	return result;
